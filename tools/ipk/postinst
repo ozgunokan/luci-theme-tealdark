@@ -1,0 +1,6 @@
+#!/bin/sh
+# SPDX-License-Identifier: Apache-2.0
+[ -z "$IPKG_INSTROOT" ] || exit 0
+uci -q set luci.themes.TealDark='/luci-static/tealdark'
+uci commit luci
+exit 0

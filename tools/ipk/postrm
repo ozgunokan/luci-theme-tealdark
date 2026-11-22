@@ -1,0 +1,10 @@
+#!/bin/sh
+# SPDX-License-Identifier: Apache-2.0
+[ -z "$IPKG_INSTROOT" ] || exit 0
+[ "$1" != upgrade ] || exit 0
+uci -q delete luci.themes.TealDark
+if [ "$(uci -q get luci.main.mediaurlbase)" = '/luci-static/tealdark' ]; then
+    uci set luci.main.mediaurlbase='/luci-static/bootstrap'
+fi
+uci commit luci
+exit 0

@@ -6,6 +6,20 @@ HG633 projesindeki açık kartlar, koyu sol menü ve turkuaz renklerin güncel L
 
 [Download APK and checksums](https://github.com/ozgunokan/luci-theme-tealdark/releases/tag/v1.0.0-r5)
 
+## IPK / opkg kurulumu
+
+`opkg` kullanan, modern **ucode tabanlı LuCI** kurulu cihazlar için ayrıca `luci-theme-tealdark_1.0.0-r5_all.ipk` yayınlanır. IPK biçimi eski Lua-only LuCI ile uyumluluk sağlamaz. APK ve IPK aynı 25 tema dosyasını içerir; cihazın paket yöneticisine uygun olanı kullanın.
+
+```sh
+opkg install /tmp/luci-theme-tealdark_1.0.0-r5_all.ipk
+uci set luci.main.mediaurlbase='/luci-static/tealdark'
+uci commit luci
+```
+
+Tarayıcıda Ctrl+F5 ile yenileyin. Kaldırmak için `opkg remove luci-theme-tealdark` kullanılır. Bootstrap kurulu tutulmalıdır. IPK, OpenWrt'nin gzip/tar paket düzenini kullanır; mimarisi `all` olarak belirtilir. Paket yapısı, dosya/izin eşleşmesi, tekrarlanabilir üretim ve izole kurulum/kaldırma betikleri test edilmiştir; **opkg kullanan gerçek cihazda kurulum henüz denenmedi**. Donanım testi APK sürümüyle yapıldı.
+
+IPK'yi tekrar üretmek için `python3 tools/package-ipk.py` çalıştırın. İzole test: `python3 tests/ipk.test.py` (POSIX `sh` gerekir). IPK ve güncellenmiş kaynak ZIP'i için `IPK-SHA256SUMS` dosyasını kullanın.
+
 ## Kurulum
 
 APK dosyasını cihazın `/tmp` dizinine kopyalayın. Bu yerel paket henüz bir depo anahtarıyla imzalanmadığı için yalnız bu dosyanın kurulumunda `--allow-untrusted` kullanılır:
