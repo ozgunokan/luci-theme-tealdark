@@ -1,0 +1,6 @@
+#!/bin/sh
+uci -q batch <<'UCI'
+set luci.themes.TealDark='/luci-static/tealdark'
+commit luci
+UCI
+exit 0

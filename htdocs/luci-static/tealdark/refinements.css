@@ -1,0 +1,43 @@
+/* Component refinements. SPDX-License-Identifier: Apache-2.0 */
+:root[data-theme=light]{--teal-soft:#e5f4f1}
+/* Give the two first overview cards one shared row height, without fixed pixels. */
+body.modern[data-page="admin-status-overview"] #view{align-items:stretch}
+body.modern[data-page="admin-status-overview"] #view>.cbi-section{align-self:stretch}
+/* Native LuCI page tabs and editor tabs share a segmented treatment. */
+.modern .tabs,.modern .cbi-tabmenu{gap:5px;padding:5px;margin-bottom:22px;border:1px solid var(--line);border-radius:10px;background:var(--card-2);align-items:center;min-height:42px;box-sizing:border-box}
+.modern .tabs>li,.modern .cbi-tabmenu>li{height:auto;margin:0;border:0;border-radius:7px}
+.modern .tabs>li>a,.modern .cbi-tabmenu>li>a{display:block;padding:9px 16px;border:1px solid transparent;border-radius:7px;line-height:20px;color:var(--muted);background:transparent;transition:background .15s,color .15s,box-shadow .15s;text-decoration:none}
+.modern .tabs>li.active>a,.modern .cbi-tabmenu>li.cbi-tab>a{color:var(--teal-2);background:var(--teal-soft);border-color:var(--teal-soft);box-shadow:0 1px 3px #1c5d5612;font-weight:650}
+.modern .tabs>li:not(.active)>a:hover,.modern .cbi-tabmenu>li:not(.cbi-tab)>a:hover{color:var(--teal);background:var(--card)}
+.modern .tabs>li>a:focus-visible,.modern .cbi-tabmenu>li>a:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.modern .modal .cbi-tabmenu{margin:14px 0 22px}.modern .modal .cbi-section{box-shadow:none}
+/* Zone hue remains a narrow identity marker, rather than a saturated header. */
+.modern .ifacebox{min-width:128px;max-width:214px;background:var(--field);border:1px solid var(--line);border-radius:10px;box-shadow:0 2px 7px #1e355006;overflow:visible;text-align:center}
+.modern .ifacebox .ifacebox-head{background:var(--teal-soft)!important;color:var(--teal-2)!important;border:0;border-left:3px solid rgb(var(--zone-color-rgb,9,155,145));border-radius:9px 9px 0 0;padding:8px 13px;font-size:12px;letter-spacing:.2px;text-shadow:none}
+.modern .ifacebox .ifacebox-head strong{font-weight:650}.modern .ifacebox .ifacebox-body{background:transparent;border:0;padding:12px 10px 11px;color:var(--muted);line-height:24px;min-height:48px;border-radius:0 0 10px 10px}
+.modern .ifacebox-body>small{display:block;margin-top:4px;font-size:11px;line-height:16px;color:var(--muted)}
+.modern .ifacebox-body img.middle{width:19px;height:19px;object-fit:contain;margin:0 2px;vertical-align:middle}
+.modern .ifacebox-body>span>.cbi-tooltip-container img.middle{width:16px;height:16px}
+.modern .ifacebadge:not(.cbi-tooltip){display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:38px;box-sizing:border-box;background:var(--field)!important;color:var(--text);border:1px solid var(--line);border-radius:9px;padding:8px 11px;font-size:12px;line-height:20px;box-shadow:none;text-shadow:none;white-space:nowrap}
+.modern .ifacebadge:not(.cbi-tooltip)>img{width:25px;height:25px;object-fit:contain;margin:0;vertical-align:middle}
+.modern .ifacebadge[data-signal="0"]{color:var(--muted);background:var(--card-2)!important}.modern .ifacebadge[data-signal="0"] em{font-style:normal}
+.modern .ifacebadge.cbi-tooltip{background:var(--card)!important;color:var(--text);border:1px solid var(--line-2);border-radius:8px;box-shadow:0 8px 25px #13233826;padding:12px}
+.modern .ifacebadge.cbi-tooltip img{width:22px;height:22px;object-fit:contain}
+/* Replace the legacy illustrations; keep their native alt text and tooltip nodes. */
+.modern .ifacebox img[src$="/bridge.svg"]{content:url("icons/bridge.svg")}
+.modern .ifacebox img[src$="/switch.svg"],.modern .ifacebox img[src$="/ethernet.svg"],.modern .ifacebox img[src$="/vlan.svg"]{content:url("icons/ethernet.svg")}
+.modern .ifacebox img[src$="/switch_disabled.svg"],.modern .ifacebox img[src$="/ethernet_disabled.svg"]{content:url("icons/ethernet-disabled.svg")}
+.modern .ifacebox img[src$="/tunnel.svg"]{content:url("icons/tunnel.svg")}
+.modern .ifacebadge img[src$="/bridge.svg"],.modern .cbi-dropdown img[src$="/bridge.svg"]{content:url("icons/bridge.svg")}
+.modern .ifacebadge img[src$="/switch.svg"],.modern .ifacebadge img[src$="/ethernet.svg"],.modern .ifacebadge img[src$="/vlan.svg"],.modern .cbi-dropdown img[src$="/switch.svg"],.modern .cbi-dropdown img[src$="/ethernet.svg"],.modern .cbi-dropdown img[src$="/vlan.svg"]{content:url("icons/ethernet.svg")}
+.modern .ifacebadge img[src$="/tunnel.svg"],.modern .cbi-dropdown img[src$="/tunnel.svg"]{content:url("icons/tunnel.svg")}
+.modern .ifacebox img[src$="/wifi.svg"],.modern .ifacebadge img[src$="/wifi.svg"],.modern .ifacebadge img[src$="/wifi_big.svg"]{content:url("icons/wifi.svg")}
+.modern .ifacebadge img[src$="/signal-none.svg"],.modern .ifacebadge img[src$="/signal-0.svg"]{content:url("icons/signal-0.svg")}
+.modern .ifacebadge img[src$="/signal-000-025.svg"]{content:url("icons/signal-1.svg")}
+.modern .ifacebadge img[src$="/signal-025-050.svg"]{content:url("icons/signal-2.svg")}
+.modern .ifacebadge img[src$="/signal-050-075.svg"]{content:url("icons/signal-3.svg")}
+.modern .ifacebadge img[src$="/signal-075-100.svg"]{content:url("icons/signal-4.svg")}
+html[data-theme=dark] .modern .tabs>li.active>a,html[data-theme=dark] .modern .cbi-tabmenu>li.cbi-tab>a{color:#83e8da;border-color:#29615b;background:#173f3d;box-shadow:none}
+html[data-theme=dark] .modern .ifacebox .ifacebox-head{color:#83e8da!important;background:#173f3d!important}
+html[data-theme=dark] .modern .ifacebox img,html[data-theme=dark] .modern .ifacebadge>img{filter:brightness(1.5) saturate(.85)}
+@media(max-width:760px){.modern .tabs,.modern .cbi-tabmenu{gap:3px;padding:4px;min-height:40px}.modern .tabs>li>a,.modern .cbi-tabmenu>li>a{padding:7px 10px;font-size:11px;line-height:20px}.modern .ifacebox{min-width:105px;max-width:100%}.modern .ifacebox .ifacebox-head{padding:7px 9px}.modern .ifacebox .ifacebox-body{padding:10px 6px}.modern .ifacebadge:not(.cbi-tooltip){padding:7px 9px;gap:6px;min-height:36px;font-size:11px}.modern .ifacebadge:not(.cbi-tooltip)>img{width:22px;height:22px}}

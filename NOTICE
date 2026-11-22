@@ -1,0 +1,10 @@
+TealDark for modern LuCI
+
+Contains adaptations of OpenWrt LuCI Bootstrap theme code.
+Copyright 2008 Steven Barth <steven@midlink.org>
+Copyright 2012 David Menting <david@nut-bolt.nl>
+Copyright 2008-2022 Jo-Philipp Wich <jo@mein.io>
+OpenWrt LuCI contributors. Licensed under Apache-2.0.
+
+Visual layout and palettes adapted from the HG633 TealDark project.
+Source provenance and exact input hashes: UPSTREAM.json.

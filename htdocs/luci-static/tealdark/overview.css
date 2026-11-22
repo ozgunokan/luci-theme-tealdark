@@ -1,0 +1,23 @@
+/* Responsive status groups and local system typography. Apache-2.0. */
+:root{--td-font:"Segoe UI Variable Text","Segoe UI Variable",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans",sans-serif}
+body.modern,.modern button,.modern input,.modern select{font-family:var(--td-font)!important}
+body.modern{font-size:14px;line-height:1.6;font-optical-sizing:auto;text-rendering:optimizeLegibility;font-variant-numeric:tabular-nums}
+.modern code,.modern pre,.modern kbd,.modern samp{font-family:ui-monospace,"Cascadia Code","SFMono-Regular",Consolas,monospace}
+.modern h2{font-size:26px;font-weight:650;letter-spacing:-.025em}.modern h3{font-size:15px;font-weight:650;letter-spacing:-.012em}
+.modern strong,.modern b{font-weight:600}.modern .modern-sidebar .nav-link{font-size:13px;font-weight:450;letter-spacing:.005em}.modern .nav-group>summary{font-weight:600}
+.modern table.table,.modern .table{font-size:13px;line-height:1.55}.modern .cbi-value-title{font-size:13px;font-weight:500}.modern .cbi-value-field{font-size:13px}
+.modern .table .th,.modern table th{font-size:10.5px;letter-spacing:.045em;font-weight:600}
+.modern button,.modern input[type=button],.modern input[type=submit],.modern .cbi-button{font-size:12.5px;font-weight:550}
+/* Native network/radio groups must not inherit the compact interface-list tile width. */
+.modern .network-status-table{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px;align-items:stretch;padding:0;margin:0 0 18px;background:transparent;border:0;border-radius:0;min-width:0;width:100%;box-sizing:border-box}
+.modern .network-status-table>.ifacebox{display:flex;flex-direction:column;align-self:stretch;width:auto;min-width:0;max-width:none;margin:0;box-sizing:border-box;text-align:left;background:var(--field)}
+.modern .network-status-table>.ifacebox>.ifacebox-head{text-align:left;padding:11px 16px;font-size:13px;line-height:22px}
+.modern .network-status-table>.ifacebox>.ifacebox-body{display:flex;flex:1;flex-direction:column;gap:16px;width:auto;min-width:0;max-width:none;box-sizing:border-box;padding:16px;text-align:left;font-size:13px;line-height:1.8;color:var(--text);white-space:normal;overflow-wrap:anywhere;word-break:normal}
+.modern .network-status-table .ifacebox-body>span{display:block;min-width:0;max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.modern .network-status-table .ifacebox-body strong{color:var(--muted);font-weight:550}
+.modern .network-status-table .ifacebox-body>.ifacebadge:not(.cbi-tooltip){display:flex;flex:0 0 auto;align-items:center;justify-content:flex-start;gap:12px;width:100%;min-width:0;max-width:100%;box-sizing:border-box;margin-top:auto;padding:12px;border-radius:8px;white-space:normal;overflow-wrap:anywhere;overflow:visible;font-size:12px;line-height:1.7;background:var(--card)!important}
+.modern .network-status-table .ifacebadge:not(.cbi-tooltip)>img{flex:0 0 27px;width:27px;height:27px}
+.modern .network-status-table .ifacebadge:not(.cbi-tooltip)>span{flex:1;min-width:0;max-width:100%;white-space:normal;overflow-wrap:anywhere;text-overflow:clip;overflow:visible}
+.modern .network-status-table .nowrap{white-space:normal}
+.modern .network-status-table .cbi-tooltip .nowrap{white-space:normal}
+@media(max-width:760px){.modern .network-status-table{grid-template-columns:minmax(0,1fr);gap:14px}.modern .network-status-table>.ifacebox>.ifacebox-body{padding:14px;line-height:1.75}.modern .network-status-table>.ifacebox>.ifacebox-head{padding:10px 14px}.modern .network-status-table .ifacebox-body>.ifacebadge:not(.cbi-tooltip){font-size:12px}.modern .table{font-size:12.5px}.modern h2{font-size:24px}}

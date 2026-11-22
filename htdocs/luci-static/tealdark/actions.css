@@ -1,0 +1,19 @@
+/* Readable native LuCI action controls; no action handlers are changed. Apache-2.0. */
+:root{--td-action:#007f78;--td-action-hover:#006b65}
+.modern .cbi-page-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:8px}
+.modern .cbi-page-actions>button,.modern .cbi-page-actions>input[type=button],.modern .cbi-page-actions>input[type=submit],.modern .cbi-page-actions>.cbi-dropdown.btn{box-sizing:border-box;min-height:40px;border-radius:7px;line-height:20px;font-size:13px;box-shadow:none;text-shadow:none}
+.modern .cbi-page-actions>.cbi-button-save{background:var(--card)!important;color:var(--teal-2)!important;border:1px solid var(--teal)!important;padding:9px 17px;font-weight:600}
+.modern .cbi-page-actions>.cbi-button-save:hover{background:var(--teal-soft)!important;color:var(--teal-2)!important}
+.modern .cbi-page-actions>.cbi-button-reset{background:var(--card)!important;color:var(--text)!important;border:1px solid var(--line-2)!important;padding:9px 17px;font-weight:500}
+.modern .cbi-page-actions>.cbi-button-reset:hover{background:var(--card-2)!important}
+.modern .cbi-page-actions>.cbi-button-apply,.modern .cbi-page-actions>.cbi-dropdown.btn.cbi-button-apply{background:var(--td-action)!important;color:#fff!important;border:1px solid var(--td-action)!important;font-weight:600}
+.modern .cbi-page-actions>.cbi-button-apply:hover,.modern .cbi-page-actions>.cbi-dropdown.btn.cbi-button-apply:hover{background:var(--td-action-hover)!important;border-color:var(--td-action-hover)!important}
+.modern .cbi-page-actions>.cbi-dropdown.btn{min-width:146px;align-items:stretch}
+.modern .cbi-page-actions>.cbi-dropdown.btn>ul:not(.dropdown){align-items:center;white-space:nowrap}
+.modern .cbi-page-actions>.cbi-dropdown.btn>.open{align-items:center;justify-content:center;min-width:30px;padding:0 8px;box-sizing:border-box;border-left:1px solid #ffffff45;line-height:normal;color:#fff}
+.modern .cbi-page-actions>.cbi-dropdown.btn>ul.dropdown{background:var(--card);color:var(--text);border:1px solid var(--line-2);border-radius:8px;padding:5px;box-shadow:0 10px 30px #12243d26}
+.modern .cbi-page-actions>.cbi-dropdown.btn>ul.dropdown>li{border-radius:5px;color:var(--text);padding:8px 11px}
+.modern .cbi-page-actions>.cbi-dropdown.btn>ul.dropdown>li:hover,.modern .cbi-page-actions>.cbi-dropdown.btn>ul.dropdown>li.focus{background:var(--teal-soft);color:var(--teal-2)}
+.modern .cbi-page-actions>button:focus-visible,.modern .cbi-page-actions>.cbi-dropdown:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+.modern .cbi-page-actions>button:disabled{opacity:.55}
+@media(max-width:760px){.modern .cbi-page-actions{gap:7px}.modern .cbi-page-actions>button{padding:9px 13px}.modern .cbi-page-actions>.cbi-dropdown.btn{min-width:140px}}

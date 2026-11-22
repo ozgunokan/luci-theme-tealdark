@@ -1,0 +1,59 @@
+{
+  "version": "1.0.0-r5",
+  "package_architecture": "noarch",
+  "target": "Zyxel NBG7815",
+  "firmware": "OpenWrt SNAPSHOT r0-90835e2",
+  "luci": "26.324.30275~618fbc9",
+  "apk": "3.0.5",
+  "ucode_templates_compiled_on_target": true,
+  "APK_install_simulation_passed": true,
+  "real_install_upgrade_remove_fallback_reinstall_passed": true,
+  "fallback_theme_preserved": "Bootstrap",
+  "all_installed_theme_files_match_source": true,
+  "network_wireless_firewall_dhcp_config_bytes_unchanged": true,
+  "device_boot_id_unchanged": true,
+  "browser": {
+    "desktop_light_and_dark": true,
+    "auto_appearance": true,
+    "responsive_width_390": true,
+    "mobile_menu_drawer_open_close": true,
+    "no_horizontal_overflow_overview_or_interfaces": true,
+    "native_Overview_Interfaces_Wireless_rendered": true,
+    "dynamic_menu_contains_installed_applications": true,
+    "console_errors": 0
+  },
+  "automated_checks": [
+    "ucode target compile",
+    "Node syntax",
+    "dynamic menu and active-path fixture",
+    "appearance modes and blocked-storage fixture"
+  ],
+  "limits": [
+    "Only this modern LuCI build was hardware tested.",
+    "Not compatible with legacy Lua-only LuCI.",
+    "Every third-party application page has not been individually tested."
+  ],
+  "theme_payload_files": 25,
+  "package_sha256": "f8d43018d62e5d94dcfcf45a4e468ce9a7b8e9c21bb9bf469d340b5324492cb5",
+  "remove_fallback_reinstall_tested_version": "1.0.0-r2",
+  "r3_refinements": {
+    "flat_interface_wireless_SVG_badges": true,
+    "native_tooltips_preserved": true,
+    "selected_tabs_themed": true,
+    "System_Memory_equal_height_at_1920": 479.375
+  },
+  "r4_refinements": {
+    "network_wireless_responsive_equal_columns": true,
+    "long_IPv6_device_and_SSID_text_wraps": true,
+    "desktop_1280_1920_and_mobile_390_verified": true,
+    "local_system_font_stack_no_external_font_requests": true
+  },
+  "r5_refinements": {
+    "Save_readable_in_light_and_dark": true,
+    "Apply_Save_Reset_height_px": 40,
+    "native_Apply_dropdown_open_close_verified_without_applying_settings": true,
+    "actual_r4_to_r5_APK_upgrade": true,
+    "configuration_and_boot_preserved_across_upgrade": true
+  },
+  "public_screenshots": "Static documentation demos with fictional data; no live device captures published."
+}

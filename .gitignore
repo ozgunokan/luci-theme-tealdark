@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.apk
+*.zip
+*.tgz
+*.log
+.private/
+.DS_Store

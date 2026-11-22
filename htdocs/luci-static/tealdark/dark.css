@@ -1,0 +1,83 @@
+/* HG633 dark palette. Scoped to the selected appearance; light layout is unchanged. */
+:root[data-theme=dark]{color-scheme:dark;--bg:#111923;--card:#1b2735;--card-2:#223141;--field:#15212e;--line:#334458;--line-2:#465c73;--text:#e0e8f1;--muted:#a6b6c8;--dim:#91a4b8;--teal:#57d8c7;--teal-2:#83e8da;--teal-soft:#173f3d;--red:#ff9b96;--red-soft:#482d33;--red-line:#80525a}
+html[data-theme=dark] body.modern{background:var(--bg);color:var(--text)}
+html[data-theme=dark] .modern-top,html[data-theme=dark] .dashboard-card,html[data-theme=dark] .modern .cbi-section,html[data-theme=dark] .modern-content>details,html[data-theme=dark] .login-page .modern-content{background:var(--card);border-color:var(--line);box-shadow:none}
+html[data-theme=dark] .modern-sidebar{background:#172230}
+html[data-theme=dark] .modern-brand,html[data-theme=dark] .modern h2,html[data-theme=dark] .modern h3,html[data-theme=dark] .metric-value,html[data-theme=dark] .dsl-endpoint-name{color:var(--text)}
+html[data-theme=dark] .modern-brand small,html[data-theme=dark] .radio-band{background:#173f3d;color:#7ee4d5}
+html[data-theme=dark] .modern a{color:var(--teal)}
+html[data-theme=dark] .modern-sidebar .nav-link{color:#b9cadb}
+html[data-theme=dark] .modern-sidebar .nav-link.selected{color:#8be8dc;background:#164947}
+html[data-theme=dark] .modern-sidebar .nav-top-link{color:#e0e8f1}
+html[data-theme=dark] .modern .modern-brand{color:var(--text)}
+html[data-theme=dark] .modern input:not([type=button]):not([type=submit]):not([type=checkbox]):not([type=radio]),html[data-theme=dark] .modern select,html[data-theme=dark] .modern textarea{background:var(--field);color:var(--text);border-color:var(--line-2)}
+html[data-theme=dark] .modern input::placeholder,html[data-theme=dark] .modern textarea::placeholder{color:#94a7bc}
+html[data-theme=dark] .modern input:disabled,html[data-theme=dark] .modern select:disabled{opacity:.65}
+html[data-theme=dark] .modern button,html[data-theme=dark] .modern input[type=button],html[data-theme=dark] .modern input[type=submit],html[data-theme=dark] .modern a.cbi-button{background:#087f79;color:#fff;border-color:#14968c}
+html[data-theme=dark] .modern :focus-visible{outline:2px solid #70dece;outline-offset:3px}
+html[data-theme=dark] .modern th,html[data-theme=dark] .modern .cbi-section-table th,html[data-theme=dark] .modern .dashboard-table th{background:var(--card-2);color:#c4d2e1;border-color:var(--line)}
+html[data-theme=dark] .modern td,html[data-theme=dark] .modern .kv,html[data-theme=dark] .modern .radio-row,html[data-theme=dark] .modern .cbi-value,html[data-theme=dark] .dsl-link-facts{border-color:var(--line)}
+html[data-theme=dark] .modern tbody tr,html[data-theme=dark] .modern .cbi-rowstyle-1,html[data-theme=dark] .modern .cbi-rowstyle-2{background:transparent}
+html[data-theme=dark] .modern tbody tr:hover{background:#243447}
+html[data-theme=dark] .modern .cbi-value-title,html[data-theme=dark] .kv>span:first-child,html[data-theme=dark] .page-subtitle,html[data-theme=dark] .zp-help,html[data-theme=dark] .fw-help,html[data-theme=dark] .fw-policy-grid p,html[data-theme=dark] .port-role,html[data-theme=dark] .radio-info small,html[data-theme=dark] .interface-note,html[data-theme=dark] .interface-device,html[data-theme=dark] .card-kicker,html[data-theme=dark] .metric-note,html[data-theme=dark] .dsl-link-note,html[data-theme=dark] .dsl-link-facts strong,html[data-theme=dark] .dsl-endpoint{color:var(--muted)}
+html[data-theme=dark] .badge{background:#2c4055;color:#c8d8e9}
+html[data-theme=dark] .badge.up{background:#19483c;color:#83e2ba}
+html[data-theme=dark] .dashboard-error{background:#493c24;color:#ffda9c}
+html[data-theme=dark] .port-tile,html[data-theme=dark] .interface-identity,html[data-theme=dark] .fw-policy-grid>div{background:var(--field);border-color:var(--line)}
+html[data-theme=dark] .port-icon{background:#29394a}
+html[data-theme=dark] .port-icon:before{background:var(--field)}
+html[data-theme=dark] .port-tile.up .port-icon{background:#19483c}
+html[data-theme=dark] .interface-label{background:#19483c;color:#83e2ba}
+html[data-theme=dark] #interface-wan .interface-label{background:#263f5b;color:#a0c8f0}
+html[data-theme=dark] #interface-management .interface-label{background:#304052;color:#c2d0df}
+html[data-theme=dark] .interface-identity.no-link .interface-label{background:#482d33!important;color:#ffb3ad!important}
+html[data-theme=dark] .meter,html[data-theme=dark] .cbi-progressbar{background:var(--field)}
+html[data-theme=dark] .fw-tabs,html[data-theme=dark] .zp-tabs,html[data-theme=dark] .network-tabs,html[data-theme=dark] .cbi-tabmenu{border-color:var(--line)}
+html[data-theme=dark] .modern .fw-tabs button,html[data-theme=dark] .modern .zp-tabs button{color:var(--muted)!important;background:transparent!important}
+html[data-theme=dark] .modern .fw-tabs button.active,html[data-theme=dark] .modern .zp-tabs button[aria-selected=true],html[data-theme=dark] .network-tabs a.active{color:var(--teal)!important;background:var(--card)!important;border-bottom-color:var(--teal)!important}
+html[data-theme=dark] .modern .fw-secondary,html[data-theme=dark] .modern .fw-row-button,html[data-theme=dark] .modern .theme-cancel{background:var(--card-2);color:var(--text);border-color:var(--line)}
+html[data-theme=dark] .modern .fw-row-button.danger{background:#482d33;color:#ffb3ad;border-color:#80525a}
+html[data-theme=dark] #fw-confirm-panel{background:#193d36}
+html[data-theme=dark] .modern pre,html[data-theme=dark] .modern code{background:var(--field);color:#d1e2ef;border-color:var(--line)}
+html[data-theme=dark] .cbi-page-actions{background:var(--card-2);border-color:var(--line)}
+html[data-theme=dark] .modern-footer{color:var(--muted);border-color:var(--line)}
+
+html[data-theme=dark] .sys-row>label,html[data-theme=dark] .sys-row small{color:var(--muted)}
+html[data-theme=dark] .sys-tabs,html[data-theme=dark] .sys-actions{border-color:var(--line)}
+html[data-theme=dark] .modern .sys-tabs button{background:transparent;color:var(--muted);border-color:transparent}
+html[data-theme=dark] .modern .sys-tabs button[aria-selected=true]{color:var(--teal);border-bottom-color:var(--teal)}
+html[data-theme=dark] .modern .sys-page .secondary{background:var(--card-2);color:var(--text);border-color:var(--line)}
+html[data-theme=dark] .sys-notice{background:#193d36;color:#a2e2d1}
+
+/* Complete DNS and update/backup form surfaces in dark appearance. */
+html[data-theme=dark] .dns-row>label,html[data-theme=dark] .dns-help,html[data-theme=dark] .dns-row small,html[data-theme=dark] .settings-page p{color:var(--muted)}
+html[data-theme=dark] .modern .dns-secondary{background:var(--card-2);color:var(--text);border-color:var(--line)}
+html[data-theme=dark] .dns-notice{background:#193d36;color:#a2e2d1}
+html[data-theme=dark] .fw-page{--fw-line:var(--line);--fw-muted:var(--muted)}
+html[data-theme=dark] .fw-page p,html[data-theme=dark] .fw-field>label,html[data-theme=dark] .fw-summary dt,html[data-theme=dark] .fw-preserved{color:var(--muted)}
+html[data-theme=dark] .fw-file-picker{background:var(--field);border-color:var(--line-2)}
+html[data-theme=dark] .fw-file-button{background:var(--card-2);color:var(--teal);border-color:var(--line-2)}
+html[data-theme=dark] .fw-file-summary strong,html[data-theme=dark] .fw-summary dd{color:var(--text)}
+html[data-theme=dark] .fw-file-summary small{color:var(--muted)}
+html[data-theme=dark] .fw-summary>div{border-color:var(--line)}
+html[data-theme=dark] .modern .fw-page .fw-secondary{background:var(--card-2);color:var(--text);border-color:var(--line)}
+html[data-theme=dark] .fw-confirm-card,html[data-theme=dark] .fw-preview-card{background:#193d36;border-color:#35685c}
+html[data-theme=dark] .fw-notice{background:#493c24;color:#ffda9c;border-color:#79613c}
+html[data-theme=dark] .fw-notice.success{background:#193d36;color:#a2e2d1;border-color:#35685c}
+html[data-theme=dark] .up-page{--up-line:var(--line);--up-muted:var(--muted)}
+html[data-theme=dark] .up-page p,html[data-theme=dark] .up-field>label,html[data-theme=dark] .up-summary dt,html[data-theme=dark] .up-preserved{color:var(--muted)}
+html[data-theme=dark] .up-file-picker{background:var(--field);border-color:var(--line-2)}
+html[data-theme=dark] .up-file-button{background:var(--card-2);color:var(--teal);border-color:var(--line-2)}
+html[data-theme=dark] .up-file-summary strong,html[data-theme=dark] .up-summary dd{color:var(--text)}
+html[data-theme=dark] .up-file-summary small{color:var(--muted)}
+html[data-theme=dark] .up-summary>div{border-color:var(--line)}
+html[data-theme=dark] .modern .up-page .up-secondary{background:var(--card-2);color:var(--text);border-color:var(--line)}
+html[data-theme=dark] .up-confirm-card,html[data-theme=dark] .up-preview-card{background:#193d36;border-color:#35685c}
+html[data-theme=dark] .up-notice{background:#493c24;color:#ffda9c;border-color:#79613c}
+html[data-theme=dark] .up-notice.success{background:#193d36;color:#a2e2d1;border-color:#35685c}
+
+html[data-theme=dark] .dsl-guide dt,html[data-theme=dark] .dsl-guide dt strong,html[data-theme=dark] .dsl-section td,html[data-theme=dark] .dsl-page summary{color:var(--text)}
+html[data-theme=dark] .dsl-guide p,html[data-theme=dark] .dsl-guide dd,html[data-theme=dark] .dsl-section th,html[data-theme=dark] .dsl-section .unit,html[data-theme=dark] .dsl-section td.na,html[data-theme=dark] .dsl-page .dsl-unit-note,html[data-theme=dark] .dsl-section>p{color:var(--muted)}
+html[data-theme=dark] .dsl-section td,html[data-theme=dark] .dsl-section th{border-color:var(--line)}
+html[data-theme=dark] .dsl-page .dsl-notice{background:#193d36;border-color:#35685c;color:#a2e2d1}
+html[data-theme=dark] .dsl-page .dsl-notice.warn{background:#493c24;border-color:#79613c;color:#ffda9c}

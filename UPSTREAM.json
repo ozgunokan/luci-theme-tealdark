@@ -1,0 +1,36 @@
+{
+  "theme": "TealDark",
+  "license": "Apache-2.0",
+  "upstream": {
+    "header.ut": {
+      "url": "https://raw.githubusercontent.com/openwrt/luci/master/themes/luci-theme-bootstrap/ucode/template/themes/bootstrap/header.ut",
+      "sha256": "9f750f79aa4fa517ee1d0329bbde71b0220cc846545c2b172eb72b27534689a4"
+    },
+    "footer.ut": {
+      "url": "https://raw.githubusercontent.com/openwrt/luci/master/themes/luci-theme-bootstrap/ucode/template/themes/bootstrap/footer.ut",
+      "sha256": "b5cb417ca73c02226679ab2412e272dcf6851eee134c521fc316c39a81ecfa4e"
+    },
+    "menu-bootstrap.js": {
+      "url": "https://raw.githubusercontent.com/openwrt/luci/master/themes/luci-theme-bootstrap/htdocs/luci-static/resources/menu-bootstrap.js",
+      "sha256": "8080281a455044d21477ad4e1c41508265dd05302712dde96e9a3eac8a6b2a16"
+    },
+    "bootstrap.css": {
+      "source": "Target LuCI 26.324.30275~618fbc9, /www/luci-static/bootstrap/cascade.css",
+      "sha256": "4d45a131d156899a1696abb39c5c1dc6fa20d3219289c5b31dbfc43991ef7b55"
+    },
+    "mobile.css": {
+      "source": "Target LuCI 26.324.30275~618fbc9, /www/luci-static/bootstrap/mobile.css",
+      "sha256": "fd3e9e1800ced8d3af5c4d234b8edf8770d31f3aa68e0add90eb12c806333190"
+    },
+    "logo.svg": {
+      "source": "Target LuCI 26.324.30275~618fbc9, /www/luci-static/bootstrap/logo.svg",
+      "sha256": "85d1806f11e04c0a3bd7e14a2bf1b0823e14d9189d68fc2812aa6ad13a294164"
+    },
+    "index.js": {
+      "source": "Target LuCI 26.324.30275~618fbc9, /www/luci-static/resources/view/status/index.js",
+      "sha256": "daaa810606420b738d74ed1c1c4d6a9db4be52b799bf4c3722580cb33a12b2ee"
+    }
+  },
+  "target_test": "OpenWrt SNAPSHOT r0-90835e2, LuCI 26.324.30275~618fbc9, Zyxel NBG7815",
+  "portable_theme_no_HG633_services": true
+}
