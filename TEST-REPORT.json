@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-r5",
+  "version": "1.0.0-r6",
   "package_architecture": "noarch",
   "target": "Zyxel NBG7815",
   "firmware": "OpenWrt SNAPSHOT r0-90835e2",
@@ -33,8 +33,7 @@
     "Not compatible with legacy Lua-only LuCI.",
     "Every third-party application page has not been individually tested."
   ],
-  "theme_payload_files": 25,
-  "package_sha256": "f8d43018d62e5d94dcfcf45a4e468ce9a7b8e9c21bb9bf469d340b5324492cb5",
+  "theme_payload_files": 26,
   "remove_fallback_reinstall_tested_version": "1.0.0-r2",
   "r3_refinements": {
     "flat_interface_wireless_SVG_badges": true,
@@ -55,5 +54,19 @@
     "actual_r4_to_r5_APK_upgrade": true,
     "configuration_and_boot_preserved_across_upgrade": true
   },
-  "public_screenshots": "Static documentation demos with fictional data; no live device captures published."
+  "public_screenshots": "Static documentation demos with fictional data; no live device captures published.",
+  "r6_login": {
+    "centered_native_form": true,
+    "empty_sidebar_and_logout_hidden_only_on_login": true,
+    "username_password_and_submit_in_one_card": true,
+    "light_dark_verified": true,
+    "mobile_width_390_no_horizontal_overflow": true,
+    "native_login_submitted_successfully": true,
+    "authenticated_sidebar_restored": true,
+    "authentication_handlers_and_security_alerts_unchanged": true,
+    "scope": "CSS presentation and a class added to the existing warning; native sysauth template and authentication handlers untouched.",
+    "password_warning": "Hidden on login at user request; verified visible after authentication."
+  },
+  "current_package_hardware_test": "APK r6 installed on target; network config hashes and boot ID unchanged. IPK hardware installation remains untested.",
+  "package_sha256": "e89b0c840571ec2a82ffd55fdf371ddf79bf044028073827e1328042b95f6419"
 }

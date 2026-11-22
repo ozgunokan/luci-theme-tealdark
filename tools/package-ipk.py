@@ -8,7 +8,7 @@ import sys
 import tarfile
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = '1.0.0-r5'
+VERSION = '1.0.0-r6'
 EPOCH = 0
 
 def archive(files):

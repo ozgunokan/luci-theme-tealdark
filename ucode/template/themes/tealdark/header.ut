@@ -53,7 +53,7 @@
         </aside>
 		<div id="maincontent" class="container modern-content">
 			{% if (getuid() == 0 && getspnam('root')?.pwdp === ''): %}
-				<div class="alert-message warning">
+				<div class="alert-message warning td-root-password-warning">
 					<h4>{{ _('No password set!') }}</h4>
 					<p>{{ _('There is no password set on this router. Please configure a root password to protect the web interface.') }}</p>
 					{% if (dispatcher.lookup("admin/system/admin")): %}

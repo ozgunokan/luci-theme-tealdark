@@ -4,14 +4,14 @@ HG633 projesindeki açık kartlar, koyu sol menü ve turkuaz renklerin güncel L
 
 İlk doğrulanan ortam: Zyxel NBG7815, OpenWrt SNAPSHOT r0-90835e2, LuCI Master 26.324.30275~618fbc9, APK 3.0.5. Paket `noarch` olarak hazırlanmıştır. Aynı güncel LuCI şablon arayüzünü kullanan cihazlara yöneliktir; eski Lua tabanlı LuCI sürümleri için değildir. Başka LuCI sürümleri ve tüm üçüncü taraf uygulamalar henüz donanımda denenmedi.
 
-[Download APK and checksums](https://github.com/ozgunokan/luci-theme-tealdark/releases/tag/v1.0.0-r5)
+[Download APK and checksums](https://github.com/ozgunokan/luci-theme-tealdark/releases/tag/v1.0.0-r6)
 
 ## IPK / opkg kurulumu
 
-`opkg` kullanan, modern **ucode tabanlı LuCI** kurulu cihazlar için ayrıca `luci-theme-tealdark_1.0.0-r5_all.ipk` yayınlanır. IPK biçimi eski Lua-only LuCI ile uyumluluk sağlamaz. APK ve IPK aynı 25 tema dosyasını içerir; cihazın paket yöneticisine uygun olanı kullanın.
+`opkg` kullanan, modern **ucode tabanlı LuCI** kurulu cihazlar için ayrıca `luci-theme-tealdark_1.0.0-r6_all.ipk` yayınlanır. IPK biçimi eski Lua-only LuCI ile uyumluluk sağlamaz. APK ve IPK aynı 26 tema dosyasını içerir; cihazın paket yöneticisine uygun olanı kullanın.
 
 ```sh
-opkg install /tmp/luci-theme-tealdark_1.0.0-r5_all.ipk
+opkg install /tmp/luci-theme-tealdark_1.0.0-r6_all.ipk
 uci set luci.main.mediaurlbase='/luci-static/tealdark'
 uci commit luci
 ```
@@ -25,7 +25,7 @@ IPK'yi tekrar üretmek için `python3 tools/package-ipk.py` çalıştırın. İz
 APK dosyasını cihazın `/tmp` dizinine kopyalayın. Bu yerel paket henüz bir depo anahtarıyla imzalanmadığı için yalnız bu dosyanın kurulumunda `--allow-untrusted` kullanılır:
 
 ```sh
-apk add --allow-untrusted /tmp/luci-theme-tealdark-1.0.0-r5.apk
+apk add --allow-untrusted /tmp/luci-theme-tealdark-1.0.0-r6.apk
 uci set luci.main.mediaurlbase='/luci-static/tealdark'
 uci commit luci
 ```
@@ -90,3 +90,7 @@ Documentation previews use fictional data. The installed theme displays native L
 ![Network cards and readable Save controls](docs/images/network-light.jpg)
 
 ![Wireless, dark appearance](docs/images/wireless-dark.jpg)
+
+## 1.0.0-r6 Login
+
+Giriş formu ortalanmış bir kartta gösterilir. Kullanıcı adı, parola ve giriş düğmesi tek kart içindedir; boş menü ve çıkış bağlantısı giriş ekranında gizlenir. Açık/koyu görünüm ve telefon genişliği kontrol edildi. Şifresiz root uyarısı giriş ekranında gizlenir ve girişten sonra yönetim panelinde görünür. Hata mesajları, ek kimlik doğrulama alanları ve LuCI giriş işleyicisi korunur. Giriş sonrası normal gezinme geri gelir. Kimlik doğrulama davranışı değiştirilmez.

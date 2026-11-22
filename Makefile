@@ -3,7 +3,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=luci-theme-tealdark
 PKG_VERSION:=1.0.0
-PKG_RELEASE:=5
+PKG_RELEASE:=6
 PKG_LICENSE:=Apache-2.0
 LUCI_TITLE:=TealDark theme for modern LuCI
 LUCI_DEPENDS:=+luci-base
